@@ -1,337 +1,274 @@
-html{
+html {
     height: 100%;
 }
+
 h1 {
-    color: white;
+    color: #1a3b4c;
     text-align: center;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Georgia', serif;
     font-weight: normal;
-    padding: 50px;
+    padding: 40px;
     padding-top: 50px;
-    font-size: 25px;
-
+    font-size: 24px;
 }
-h2{
-    
-    color: black;
+
+h2 {
+    color: #1a3b4c;
     text-align: center;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Georgia', serif;
     font-weight: normal;
-    font-size: 20px;
-    padding: 30px;
-
+    font-size: 18px;
+    padding: 25px;
 }
-main{
+
+main {
     display: grid;
     place-items: center;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
-nav{
-    background: white;
-    height: 80px;
+
+nav {
+    background: #6f8f9b;
+    height: 70px;
     width: 100%;
 }
-label.navbar{
-    color: green;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
+
+label.navbar {
+    color: #e4e0dd;
+    font-size: 30px;
+    line-height: 70px;
+    padding: 0 80px;
     font-weight: bold;
 }
-nav ul{
-    float: right;
-    margin-right: 25px;
 
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
-nav li{
+
+nav li {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 8px;
+    line-height: 70px;
+    margin: 0 6px;
 }
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
+
+nav ul li a {
+    color: #e4e0dd;
+    font-size: 16px;
+    padding: 7px 12px;
     border-radius: 3px;
     text-transform: capitalize;
 }
-a.active,a:hover{
-    background-color: #112432 ;
+
+a.active, a:hover {
+    background-color: #1a3b4c;
     transition: 0.3s;
 }
 
-@media(max-width: 95px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
+@media(max-width: 95px) {
+    label.logo {
+        font-size: 28px;
+        padding-left: 40px;
     }
-    nav ul li a{
-        font-size: 16px;
+    nav ul li a {
+        font-size: 14px;
     }
 }
-body{
+
+body {
     width: 100%;
-    min-height: 100hv;
-    background-image: linear-gradient(#b5c2c7, #dfdbd8);
+    min-height: 100vh;
+    background-image: linear-gradient(#c7d3d8, #e4e0dd);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
 }
-.cen_pos{
+
+.cen_pos {
     text-align: center;
-    top: 20%;
-    left: 15%;
+    top: 15%;
+    left: 10%;
 }
-footer{
-    
-    color: #dfdbd8;
+
+footer {
+    color: #e4e0dd;
     text-align: center;
-    background-color: #5e7783;
+    background-color: #6f8f9b;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 3%;
-    
+    padding: 2%;
 }
-.select_container{
 
-    border-radius: 25px;
+.select_container {
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     position: relative;
-    min-width: 250px;
-    height: 50px;
+    min-width: 200px;
+    height: 40px;
 }
 
-.select_box{
-    opacity: 0.8;
-    border-radius: 15px;
+.select_box {
+    opacity: 0.9;
+    border-radius: 12px;
     border: none;
     appearance: none;
-    padding: 0 30px 0 15px;
+    padding: 0 25px 0 12px;
     width: 100%;
-    color: #dfdbd8;
-    background-color: #112432;
-    font-size: 20px;
+    color: #e4e0dd;
+    background-color: #1a3b4c;
+    font-size: 18px;
     transition: 0.5s;
 }
-.inputbox{
+
+.inputbox {
     position: relative;
-    width: 250px;
-}
-.num{
-    position: absolute;
-    left: 200px;
-    top: 150px;
     width: 200px;
-    height: 0px;
 }
-.delete{
+
+.num {
     position: absolute;
-    right: 200px;
-    top: 150px;
-    width: 200px;
-    height: 0px;
-    display: flex;
-    flex-direction: row;
-}
-.delete span{
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: #112432;
-    transition: 0.5s;
-}
-.delete Input{
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #5e7783;
-    border-radius: 5px;
-    background: none;
-    outline: none;
-    color: #112432;
-    font-size: 1em;
-}
-.delete Input:valid ~ span,
-.delete Input:focus ~ span{
-    color: #112432;
-    transform: translateX(5px) translateY(-14px);
-    font-size: 0.80em;
-    padding: 0 10px;
-    background: none;
-}
-.del_button{
-    position: absolute;
-    padding: 1px;
-    right: 100px;
-    top: 145px;
-    width: 100px;
-    height: 0px;    
-}
-.add_button{
-    position: absolute;
-    padding: 1px;
-    right: 220px;
-    top: 500px;
+    left: 160px;
+    top: 120px;
     width: 150px;
     height: 0px;
 }
-.rmv{
-    border: 1px solid #47606c;
-    border-radius: 10px;
-    background: none;
-    padding: 5px 10px;
-    font-size: 15px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.5s;
-}
-.inputbox Input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #5e7783;
-    border-radius: 10px;
-    background: none;
-    outline: none;
-    color: #112432;
-    font-size: 1em;
-}
-.inputbox span{
+
+
+.del_button {
     position: absolute;
-    left: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: #5e7783;
+    padding: 1px;
+    right: 80px;
+    top: 120px;
+    width: 80px;
+    height: 0px;
+}
+
+.add_button {
+    position: absolute;
+    padding: 1px;
+    right: 150px;
+    top: 400px;
+    width: 100px;
+    height: 0px;
+}
+
+.rmv,
+.btn1,
+.btn2 {
+    border: 1px solid #415a66;
+    border-radius: 8px;
+    background: none;
+    padding: 7px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 8px;
     transition: 0.5s;
 }
-.inputbox Input:valid ~ span,
-.inputbox Input:focus ~ span{
-    color: #112432;
-    transform: translateX(5px) translateY(-14px);
-    font-size: 0.80em;
-    padding: 0 10px;
-    background: none;
-}
-.btn_container{
+
+.btn_container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    min-height: 10vh;
+    min-height: 8vh;
 }
-.btn{
-    border: 1px solid #415a66;
-    border-radius: 10px;
-    background: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.5s;
-}
-.btn1, .btn2, .rmv{
+
+.btn1,
+.btn2,
+.rmv {
     color: #415d6a;
 }
-.btn1:hover, .btn2:hover, .rmv:hover, .dlg:hover{
-    color: #dfdbd8;
-    
-    background: #112432;
+
+.btn1:hover,
+.btn2:hover,
+.rmv:hover {
+    color: #e4e0dd;
+    background: #1a3b4c;
 }
-.result{
-    opacity: 0.8;
-    color: #112432;
-    font-size: 25px;
+
+.result {
+    opacity: 0.9;
+    color: #1a3b4c;
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    min-height: 30vh;
+    min-height: 25vh;
 }
-.inputbox_payroll{
+
+.inputbox_payroll {
     position: absolute;
-    right: 200px;
-    top: 250px;
-    width: 200px;
+    right: 150px;
+    top: 200px;
+    width: 150px;
     height: 0;
     display: flex;
     flex-direction: column;
 }
-.inputbox_payroll input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #5e7783;
-    border-radius: 10px;
-    background: none;
-    outline: none;
-    color: #112432;
-    font-size: 1em;
-}
-.inputbox_payroll input span{
+
+
+table {
     position: absolute;
-    left: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: #5e7783;
-    transition: 0.5s;
-}
-table{    
-    position: absolute;
-    left: 300px;
-    top: 200px;
-    width: 720px;
+    left: 250px;
+    top: 150px;
+    width: 600px;
     height: 0;
     border-spacing: 0px;
-    border: 1px solid #5e7783;
+    border: 1px solid #6f8f9b;
     border-radius: 5px;
 }
-th{
+
+th {
     text-align: center;
-    border: 1px solid #5e7783;
+    border: 1px solid #6f8f9b;
 }
-tbody{
-    border: 1px solid #112432;
+
+tbody {
+    border: 1px solid #1a3b4c;
     padding: 5px;
     text-align: center;
 }
-.cleartable{
+
+.cleartable {
     position: absolute;
     padding: 1px;
-    left: 100px;
-    top: 145px;
-    width: 150px;
-    height: 0px;    
+    left: 50px;
+    top: 110px;
+    width: 100px;
+    height: 0px;
 }
 
-dialog{
+dialog {
     background-color: #afb9bd;
     position: absolute;
-    left: 400px;
-    top: 200px;
-    width: 720px;
-    height: 100px;
+    left: 300px;
+    top: 150px;
+    width: 600px;
+    height: 80px;
     border-spacing: 0px;
-    border: 1px solid #112432;
+    border: 1px solid #1a3b4c;
     border-radius: 5px;
     text-align: center;
-    border: 1px solid #112432;
+    border: 1px solid #1a3b4c;
     border-radius: 8px;
 }
-h4{
-    padding: 10px;
-    size: 5px;
+
+h4 {
+    padding: 8px;
+    size: 4px;
 }
