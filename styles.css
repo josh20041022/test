@@ -1,0 +1,337 @@
+html{
+    height: 100%;
+}
+h1 {
+    color: #112432;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: normal;
+    padding: 50px;
+    padding-top: 60px;
+    font-size: 25px;
+
+}
+h2{
+    
+    color: #112432;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 30px;
+
+}
+main{
+    display: grid;
+    place-items: center;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: #5e7783;
+    height: 80px;
+    width: 100%;
+}
+label.navbar{
+    color: #dfdbd8;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+nav ul li a{
+    color: #dfdbd8;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+a.active,a:hover{
+    background-color: #112432 ;
+    transition: 0.3s;
+}
+
+@media(max-width: 95px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+body{
+    width: 100%;
+    min-height: 100hv;
+    background-image: linear-gradient(#b5c2c7, #dfdbd8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.cen_pos{
+    text-align: center;
+    top: 20%;
+    left: 15%;
+}
+footer{
+    
+    color: #dfdbd8;
+    text-align: center;
+    background-color: #5e7783;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3%;
+    
+}
+.select_container{
+
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 50px;
+}
+
+.select_box{
+    opacity: 0.8;
+    border-radius: 15px;
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 100%;
+    color: #dfdbd8;
+    background-color: #112432;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.inputbox{
+    position: relative;
+    width: 250px;
+}
+.num{
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    width: 200px;
+    height: 0px;
+}
+.delete{
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    width: 200px;
+    height: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.delete span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #112432;
+    transition: 0.5s;
+}
+.delete Input{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #5e7783;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    color: #112432;
+    font-size: 1em;
+}
+.delete Input:valid ~ span,
+.delete Input:focus ~ span{
+    color: #112432;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 0.80em;
+    padding: 0 10px;
+    background: none;
+}
+.del_button{
+    position: absolute;
+    padding: 1px;
+    right: 100px;
+    top: 145px;
+    width: 100px;
+    height: 0px;    
+}
+.add_button{
+    position: absolute;
+    padding: 1px;
+    right: 220px;
+    top: 500px;
+    width: 150px;
+    height: 0px;
+}
+.rmv{
+    border: 1px solid #47606c;
+    border-radius: 10px;
+    background: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+}
+.inputbox Input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5e7783;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    color: #112432;
+    font-size: 1em;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #5e7783;
+    transition: 0.5s;
+}
+.inputbox Input:valid ~ span,
+.inputbox Input:focus ~ span{
+    color: #112432;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 0.80em;
+    padding: 0 10px;
+    background: none;
+}
+.btn_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
+}
+.btn{
+    border: 1px solid #415a66;
+    border-radius: 10px;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+}
+.btn1, .btn2, .rmv{
+    color: #415d6a;
+}
+.btn1:hover, .btn2:hover, .rmv:hover, .dlg:hover{
+    color: #dfdbd8;
+    
+    background: #112432;
+}
+.result{
+    opacity: 0.8;
+    color: #112432;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+}
+.inputbox_payroll{
+    position: absolute;
+    right: 200px;
+    top: 250px;
+    width: 200px;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+}
+.inputbox_payroll input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5e7783;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    color: #112432;
+    font-size: 1em;
+}
+.inputbox_payroll input span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #5e7783;
+    transition: 0.5s;
+}
+table{    
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    width: 720px;
+    height: 0;
+    border-spacing: 0px;
+    border: 1px solid #5e7783;
+    border-radius: 5px;
+}
+th{
+    text-align: center;
+    border: 1px solid #5e7783;
+}
+tbody{
+    border: 1px solid #112432;
+    padding: 5px;
+    text-align: center;
+}
+.cleartable{
+    position: absolute;
+    padding: 1px;
+    left: 100px;
+    top: 145px;
+    width: 150px;
+    height: 0px;    
+}
+
+dialog{
+    background-color: #afb9bd;
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    width: 720px;
+    height: 100px;
+    border-spacing: 0px;
+    border: 1px solid #112432;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #112432;
+    border-radius: 8px;
+}
+h4{
+    padding: 10px;
+    size: 5px;
+}
